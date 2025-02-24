@@ -30,6 +30,9 @@ ul {
     border: 2px dashed blue;
     margin: 5px;
     padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+    grid-template-rows: 3fr 2fr 1fr ;
 }
 
 li {  
