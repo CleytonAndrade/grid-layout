@@ -30,6 +30,8 @@ ul {
     border: 2px dashed blue;
     margin: 5px;
     padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
 }
 
 li {  
