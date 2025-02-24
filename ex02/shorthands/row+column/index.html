@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        section {
+            background-color: gray;
+            border: 2px dashed black;
+            border: 2px dashed red;
+            padding: 2px;
+            margin: 2px;
+            display: grid;
+            grid-template: 150px / 200px auto 150px;
+            grid-template-areas: 
+                " logo nav ads"
+                " vnav cont ads"
+                " foot foot foot"
+            ;
+        }
+
+        .logo {grid-area: logo;}
+        .nav {grid-area: nav;}
+        .vnav {grid-area: vnav;}
+        .ads {grid-area: ads;}
+        .cont {grid-area: cont;}
+        .foot {grid-area: foot;}
+     
+
+        section div {
+            border: 2px dashed blue;
+            margin: 2px;
+            padding: 5px;
+            background-color: rgb(137, 3, 3);
+        }
+
+        div p {
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>  
+        <main>
+            <h1>Shorthand</h1>
+            <section>
+                <div class="logo">
+                    <p>Logo</p>
+                </div>
+                <div class="nav">
+                    <p>Navegação</p>
+                </div>
+                <div class="vnav">
+                    <p>Navegação Vertical</p>
+                </div>
+                <div class="ads">
+                    <p>Anúncios</p>
+                </div>
+                <div class="cont">
+                    <p>Conteúdo <br>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque quo ipsa obcaecati asperiores autem nisi laudantium impedit iure quod adipisci, voluptatem ullam molestiae quasi sunt incidunt in ipsam, eius vitae.
+                        Mollitia vel accusantium magnam nesciunt doloribus velit debitis quam eaque fuga eos rerum ipsum impedit, odit amet distinctio alias ex ducimus fugiat recusandae placeat. Qui, deleniti. Omnis id eum optio?
+                        Doloribus nisi placeat alias nesciunt! Sunt a porro maiores iste eius vel ab alias eum asperiores, vitae iusto provident, quos, voluptate ullam amet magnam natus illum ipsa expedita eligendi facere.
+                        Consectetur cupiditate neque aliquid veritatis doloremque harum ea temporibus praesentium mollitia numquam quibusdam dolorem quasi, quisquam eius autem modi corrupti, repudiandae obcaecati, eveniet quam porro. Vero vitae dolores suscipit obcaecati?
+                        Recusandae sunt reprehenderit voluptate, totam dolorem animi esse corporis ullam eligendi commodi quia sint nisi. Praesentium illo dolorum quia obcaecati rerum possimus ipsam veritatis quod, illum animi commodi cupiditate temporibus.
+                        Natus repudiandae pariatur rem ab, id at perferendis, aspernatur aperiam est, exercitationem accusamus veritatis sint saepe! Nisi vel eaque a, aperiam omnis illo temporibus. Sequi harum quo animi laboriosam aspernatur!
+                    </p>
+                </div>
+                <div class="foot">
+                    <p>Rodapé</p>
+                </div>
+            </section>
+        </main>
+</body>
+</html>
