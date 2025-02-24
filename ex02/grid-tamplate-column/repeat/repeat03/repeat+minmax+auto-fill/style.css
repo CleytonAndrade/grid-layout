@@ -31,7 +31,7 @@ ul {
     margin: 5px;
     padding: 5px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, auto)); /*Aqui que se vê diferença do auto-fit para o auto-fill, enquanto o auto-fit estica o conteúdo para caber na tela o auto-fill cria caixas vazias para potenciais novos itens*/
+    grid-template-columns: repeat(auto-fill, minmax(200px, auto)); /*Aqui que se vê diferença do auto-fit para o auto-fill, enquanto o auto-fit estica o conteúdo para caber na tela o auto-fill cria caixas vazias para potenciais novos itens*/
 }
 
 li {  
