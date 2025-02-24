@@ -30,6 +30,8 @@ ul {
     border: 2px dashed blue;
     margin: 5px;
     padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px,300px)); /* Cria 3 colunas com no mínimo 200px e no máximo 300px cada*/
 }
 
 li {  
