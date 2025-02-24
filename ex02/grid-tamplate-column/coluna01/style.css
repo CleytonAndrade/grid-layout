@@ -30,6 +30,8 @@ ul {
     border: 2px dashed blue;
     margin: 5px;
     padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 200px 200px;
 }
 
 li {  
@@ -37,7 +39,7 @@ li {
     list-style-type: none;
     border: 2px dashed white;
     margin: 5px;
-    padding: 5px;
+    padding: 5px; 
 }
 
 li > a {  
