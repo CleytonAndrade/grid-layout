@@ -18,12 +18,18 @@
             padding: 2px;
             margin: 2px;
             display: grid;
-            grid-template-columns: 150px auto 150px;
+            /* grid-template-columns: 150px auto 150px;
             grid-template-rows: 120px auto 40px;
             grid-template-areas: 
                 " logo  nav   nav  "
                 " vnav  cont  ads  "  
                 " foot foot foot "             
+            ; */
+            grid-template: 
+                "logo nav nav" 150px
+                "vnav cont ads" minmax(600px, auto)
+                "foot foot foot" 40px 
+                / 150px auto 100px
             ;
         }
 
@@ -65,21 +71,7 @@
                     <p>Anúncios</p>
                 </div>
                 <div class="cont">
-                    <p>Conteúdo <br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos architecto facere libero eos consequatur, commodi quia doloribus, in voluptatibus odit optio quibusdam id nesciunt qui dignissimos, facilis atque porro fugiat.
-                    Officia voluptates, reiciendis saepe quaerat eum amet debitis culpa consequuntur facilis aut! Perspiciatis soluta reprehenderit sit deserunt voluptatum doloremque, ex delectus placeat aut rerum dolores sunt corrupti labore laboriosam minus?
-                    Distinctio ex tenetur aliquam et ratione impedit rerum dignissimos nobis reiciendis assumenda quam molestias aliquid ipsum id quisquam exercitationem expedita dolor qui sit deleniti, quibusdam ab. Laudantium officia voluptas debitis?
-                    Dolore repellat velit repudiandae ipsam obcaecati, culpa excepturi voluptatum tempora rem corporis impedit fuga, id maiores odio consectetur sed a molestias quod? Quas numquam quae ratione, ea porro atque necessitatibus!
-                    Culpa veniam, expedita, suscipit commodi doloribus dolorum, rerum non est delectus amet enim a ipsa. Dolorum, adipisci qui. Quas animi minima provident molestias. Molestias dolore vel exercitationem tenetur temporibus deleniti.
-                    Libero molestias, aspernatur quasi blanditiis sint eligendi facilis quam reprehenderit consequuntur aperiam nulla magni, obcaecati est explicabo ea delectus fuga exercitationem! Consequuntur expedita laudantium et. Facilis officiis laboriosam temporibus eveniet?
-                    Placeat obcaecati amet sunt numquam dolorem saepe ab molestias, vel quae? Commodi esse velit exercitationem architecto. Aperiam repudiandae iure, atque earum nobis eaque alias nisi! Facilis perferendis voluptatem sed veritatis?
-                    Officiis error dolore architecto tenetur dolor numquam, quis veniam perspiciatis id facilis maxime! Repellat impedit dicta voluptate voluptates accusamus amet? Quasi laboriosam dignissimos reiciendis dicta sint vel in recusandae a?
-                    Neque ipsa, incidunt molestias quas perferendis libero possimus harum eius consectetur tenetur delectus eum nobis cumque! Itaque maxime rem enim quas nisi pariatur, non mollitia exercitationem id a dicta expedita.
-                    Molestiae impedit nostrum fuga nobis praesentium molestias eius temporibus doloremque dolorem, voluptatem perferendis quod odit aliquam quibusdam adipisci fugit quae itaque vero officia laudantium! Ducimus ut voluptate aspernatur non dolorem.
-                    Molestias mollitia pariatur odio! Quos natus libero architecto, quia tempore in amet dignissimos sit vitae error eos fuga accusamus explicabo voluptatum iste. Ullam, sapiente? Voluptates fugit deserunt modi maiores ipsa.
-                    Nostrum blanditiis eveniet voluptates veritatis. Blanditiis error reprehenderit tenetur fugiat ea, commodi fugit nesciunt aut atque repellendus. Omnis, enim voluptatem vel nobis quibusdam aspernatur aut, eius reiciendis adipisci voluptatibus cumque?
-                    Nam repellendus recusandae facere unde esse fuga nesciunt labore ab magnam soluta rerum aliquid a quidem sit architecto deleniti, cupiditate fugiat quibusdam modi, quae dolorum! Atque facilis tempora facere recusandae!
-                    </p>
+                    <p>Conteúdo</p>
                 </div>
                 <div class="foot">
                     <p>Rodapé</p>
