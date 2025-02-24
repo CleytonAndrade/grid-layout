@@ -18,12 +18,19 @@
             padding: 2px;
             margin: 2px;
             display: grid;
-            
             grid-template-areas: 
-                " a a a "
-                " a a a "                
+                " f e d "
+                " c b a "               
             ;
         }
+
+        .item1 {grid-area: a;}
+        .item2 {grid-area: b;}
+        .item3 {grid-area: c;}
+        .item4 {grid-area: d;}
+        .item5 {grid-area: e;}
+        .item6 {grid-area: f;}
+     
 
         nav > div {
             border: 2px dashed blue;
@@ -42,41 +49,30 @@
     <main>
         <h1>Grid Area</h1>
         <nav>
-            <div>
+            <div class="item1">
                 <p>Item01</p>
             </div>
 
-            <div>
+            <div class="item2">
                 <p>Item02</p>
             </div>
 
-            <div>
+            <div class="item3">
                 <p>Item03</p>
             </div>
 
-            <div>
+            <div class="item4">
                 <p>Item04</p>
             </div>
 
-            <div>
+            <div class="item5">
                 <p>Item05</p>
             </div>
 
-            <div>
+            <div class="item6">
                 <p>Item06</p>
             </div>
 
-            <div>
-                <p>Item07</p>
-            </div>
-
-            <div>
-                <p>Item08</p>
-            </div>
-
-            <div>
-                <p>Item09</p>
-            </div>
         </nav>
     </main>
 </body>
