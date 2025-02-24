@@ -31,7 +31,7 @@ ul {
     margin: 5px;
     padding: 5px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, 200px); /* Cria colunas de 200px que sempre vão caber no container, se não couber quebra de linha */
+    grid-template-columns: repeat(auto-fit, 200px); /* Cria colunas de 200px que sempre vão caber no container, se diminuir até 200px elas vão quebra de linha */
 }
 
 li {  
