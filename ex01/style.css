@@ -49,6 +49,20 @@ li > a {
 
 article { 
     background-color: white;
+    border: 2px dashed black;
+    margin: 5px;
+    padding: 5px;
+}
+article h2 {
+    border: 2px dashed blue;
+    margin: 5px;
+    padding: 5px;
+}
+
+article p {
+    border: 2px dashed red;
+    margin: 5px;
+    padding: 5px;
 }
 
 footer {
