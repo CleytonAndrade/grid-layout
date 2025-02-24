@@ -11,7 +11,7 @@
             box-sizing: border-box;
         }
 
-        nav {
+        section {
             background-color: gray;
             border: 2px dashed black;
             border: 2px dashed red;
@@ -19,9 +19,9 @@
             margin: 2px;
             display: grid;
             grid-template-areas: 
-                " logo    nav     nav    "
-                " vnav    cont    ads    "  
-                " footer  footer  footer "             
+                " logo  nav   nav  "
+                " vnav  cont  ads  "  
+                " foot foot foot "             
             ;
         }
 
@@ -30,10 +30,10 @@
         .vnav {grid-area: vnav;}
         .ads {grid-area: ads;}
         .content {grid-area: cont;}
-        .footer {grid-area: footer;}
+        .foot {grid-area: foot;}
      
 
-        nav > div {
+        section div {
             border: 2px dashed blue;
             margin: 2px;
             padding: 5px;
@@ -47,29 +47,28 @@
     </style>
 </head>
 <body>  
-        <h1>Grid Area</h1>        
-            <div class="logo">
-                <p>Item01</p>
-            </div>
-
-            <div class="nav">
-                <p>Item02</p>
-            </div>
-
-            <div class="vnav">
-                <p>Item03</p>
-            </div>
-
-            <div class="ads">
-                <p>Item04</p>
-            </div>
-
-            <div class="cont">
-                <p>Item05</p>
-            </div>
-
-            <div class="footer">
-                <p>Item06</p>
-            </div>
+        <main>
+            <h1>Grid Area</h1>
+            <section>
+                <div class="logo">
+                    <p>Logo</p>
+                </div>
+                <div class="nav">
+                    <p>Navegação</p>
+                </div>
+                <div class="vnav">
+                    <p>Navegação Vertical</p>
+                </div>
+                <div class="ads">
+                    <p>Anúncios</p>
+                </div>
+                <div class="cont">
+                    <p>Conteúdo</p>
+                </div>
+                <div class="foot">
+                    <p>Rodapé</p>
+                </div>
+            </section>
+        </main>
 </body>
 </html>
