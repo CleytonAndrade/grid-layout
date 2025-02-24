@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            background-color: gray;
+            border: 2px dashed black;
+            border: 2px dashed red;
+            padding: 2px;
+            margin: 2px;
+            display: grid;
+            
+            grid-template-areas: 
+                " a a a "
+                " a a a "                
+            ;
+        }
+
+        nav > div {
+            border: 2px dashed blue;
+            margin: 2px;
+            padding: 5px;
+            background-color: rgb(137, 3, 3);
+        }
+
+        div p {
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Grid Area</h1>
+        <nav>
+            <div>
+                <p>Item01</p>
+            </div>
+
+            <div>
+                <p>Item02</p>
+            </div>
+
+            <div>
+                <p>Item03</p>
+            </div>
+
+            <div>
+                <p>Item04</p>
+            </div>
+
+            <div>
+                <p>Item05</p>
+            </div>
+
+            <div>
+                <p>Item06</p>
+            </div>
+        </nav>
+    </main>
+</body>
+</html>
