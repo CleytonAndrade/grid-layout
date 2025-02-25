@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: gray;
+        }
+
+        .nav { grid-area: nav;}
+        .vnav { grid-area: vnav;}
+        .cont { grid-area: cont;}
+        .ads { grid-area: ads;}
+        .ext { grid-area: ext;}
+        .foot { grid-area: foot;}
+        
+        nav {
+            
+            gap: 5px;
+            display: grid;  
+            grid-template-areas: 
+                " nav  vnav cont ads ext foot "
+
+            ;
+            grid-template-columns: 100px 100px 100px;
+            grid-auto-columns: 00px;
+        }
+
+         nav > div {
+            background-color: brown;
+            border: 2px dashed white;
+         }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Grid Gap</h1>
+        <nav>
+            <div class="nav">
+                <p>Menu de navegação</p>
+            </div>
+
+            <div class="vnav">
+                <p>Navegação vertical</p>
+            </div>
+
+            <div class="cont">
+                <p>Conteúdo</p>
+            </div>
+
+            <div class="ads">
+                <p>Propaganda</p>
+            </div>
+
+            <div class="ext">
+                <p>Conteúdo extra</p>
+            </div>
+            
+            <div class="foot">
+                <p>Rodapé</p>
+            </div>
+        </nav>
+    </main>
+</body>
+</html>

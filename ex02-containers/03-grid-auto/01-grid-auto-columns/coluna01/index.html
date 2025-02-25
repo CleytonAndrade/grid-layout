@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: gray;
+        }
+        
+        nav {
+            gap: 5px;
+            display: grid;    
+            grid-auto-columns: 200px;
+        }
+
+         nav > div {
+            background-color: brown;
+            border: 2px dashed white;
+         }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Grid Gap</h1>
+        <nav>
+            <div class="nav">
+                <p>Item 01</p>
+            </div>
+
+            <div class="vnav">
+                <p>Item 02</p>
+            </div>
+
+            <div class="cont">
+                <p>Item 03</p>
+            </div>
+
+            <div class="ads">
+                <p>Item 04</p>
+            </div>
+
+            <div class="ext">
+                <p>Item 05</p>
+            </div>
+            
+            <div class="foot">
+                <p>Item 06</p>
+            </div>
+        </nav>
+    </main>
+</body>
+</html>
