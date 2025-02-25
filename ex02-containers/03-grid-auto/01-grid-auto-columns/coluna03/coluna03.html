@@ -14,22 +14,15 @@
             background-color: gray;
         }
 
-        .nav { grid-area: nav;}
-        .vnav { grid-area: vnav;}
-        .cont { grid-area: cont;}
-        .ads { grid-area: ads;}
-        .ext { grid-area: ext;}
-        .foot { grid-area: foot;}
-        
+        .ext {
+            grid-column: 3;
+        }
+
         nav {
-            
             gap: 5px;
-            display: grid;  
-            grid-template-areas: 
-                " nav  vnav cont ads ext foot "  /* dizendo onde cada item vai ficar em cada coluna*/
-            ;
-            grid-template-columns: 100px 100px 100px; /*Especificando o tamanho das 3 primeira colunas*/
-            grid-auto-columns: 200px; /* As colunas que nao tiveram valores definidos nem em areas nem em columns serão definidas por grid-auto-columns */
+            display: grid;    
+            grid-template-columns: 1fr 1fr; /*cria duas colunas proporcionais */
+            grid-auto-columns: 50px; /*define o tamanho da coluna 3 criada pelo grid-column como 50px*/
         }
 
          nav > div {
