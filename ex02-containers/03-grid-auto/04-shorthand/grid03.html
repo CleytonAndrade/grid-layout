@@ -13,11 +13,36 @@
         body {
             background-color: gray;
         }
+
+        .nav {
+            grid-area: nav;
+        }  
+        .vnav {
+            grid-area: vnav;
+        }  
+        .cont {
+            grid-area: cont;
+        }   
+        .ads {
+            grid-area: ads;
+        } 
+        .ext {
+            grid-area: ext;
+        } 
+        .foot {
+            grid-area: foot;
+        } 
         
         nav {
             gap: 5px;
             display: grid;
-            grid-auto-flow: column;          
+            grid: 
+                "nav  nav  ads" 200px
+                "vnav cont ads" 400px
+                "vnav ext  ads" 200px
+                "foot foot foot" 30px 
+                /150px auto 100px   
+            ;         
         }
 
          nav > div {

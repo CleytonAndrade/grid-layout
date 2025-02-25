@@ -17,7 +17,8 @@
         nav {
             gap: 5px;
             display: grid;
-            grid-auto-flow: column;          
+            /* grid: 100px 100px / 1fr 1fr 1fr; */
+            grid: repeat(2,100px) / repeat(3, 1fr); /*shorthand para grid-templete-row / grid-templete-column */
         }
 
          nav > div {
