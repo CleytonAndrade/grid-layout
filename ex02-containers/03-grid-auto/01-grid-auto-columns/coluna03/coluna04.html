@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: gray;
+        }
+
+        .ext {
+            grid-column: 3;
+        }
+
+        .cont {
+            grid-column: 5;
+        }
+
+        nav {
+            gap: 5px;
+            display: grid;    
+            grid-template-columns: 1fr 1fr; /*cria duas colunas proporcionais */
+            grid-auto-columns: 100px 60px 50px; /*define valores paras 3 primeiras colunas automaticamente criadas*/
+        }
+
+         nav > div {
+            background-color: brown;
+            border: 2px dashed white;
+         }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Grid Gap</h1>
+        <nav>
+            <div class="nav">
+                <p>Menu de navegação</p>
+            </div>
+
+            <div class="vnav">
+                <p>Navegação vertical</p>
+            </div>
+
+            <div class="cont">
+                <p>A</p>
+            </div>
+
+            <div class="ads">
+                <p>Propaganda</p>
+            </div>
+
+            <div class="ext">
+                <p>B</p>
+            </div>
+            
+            <div class="foot">
+                <p>Rodapé</p>
+            </div>
+        </nav>
+    </main>
+</body>
+</html>
