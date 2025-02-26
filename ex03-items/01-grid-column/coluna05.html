@@ -17,11 +17,11 @@
         nav {
             gap: 5px;
             display: grid;
-            grid-template: repeat(2,100px)/ repeat(3,100px);           
+            grid-template: repeat(2,100px)/ repeat(4,100px);           
         }
 
         .nav {
-            grid-column: 3; /* Mandou o item nav para linha de coluna 3 e nao se expandiu mantendo na célula*/
+            grid-column: 2 / 3; /* O item nav vai se expandir da linha de coluna 2 até a linha de coluna 3, ou seja foi direto para coluna 2 e nao se expandiu pra nenhuma outra célula*/
         }
 
          nav > div {
