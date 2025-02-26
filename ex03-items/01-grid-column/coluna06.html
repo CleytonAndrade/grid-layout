@@ -17,14 +17,17 @@
         nav {
             gap: 5px;
             display: grid;
-            grid-template: repeat(2,100px)/ repeat(4,100px);           
+            grid-template-rows: 200px 200px 200px;
+            grid-template-columns:[inicio]150px[meio1]150px[meio2]150px[final]; /* É possível renomear cada linha de coluna entre []*/           
         }
 
         .nav {
             /* 
-            grid-column-start: 2;
-            grid-column-end: 3;         */
-            grid-column: 2 / 3; /* O item nav vai se expandir da linha de coluna 2 até a linha de coluna 3, ou seja foi direto para coluna 2 e nao se expandiu pra nenhuma outra célula*/
+            grid-column-start: mio1;
+            grid-column-end: final;  */
+            grid-column: 2 / 4;
+            grid-column: meio1 / final; 
+
         }
 
          nav > div {
