@@ -16,8 +16,12 @@
         
         nav {
             gap: 5px;
-            display: grid;
-            grid-template: repeat(2,100px)/ repeat(3,100px);           
+            grid: 
+                " area1 area2 area3 " 150px
+                " area4 area5 area6 " 150px
+                " area7 area8 area9 " 150px
+                / 150px 150px 150px
+            ;           
         }
 
          nav > div {
@@ -28,31 +32,44 @@
 </head>
 <body>
     <main>
-        <h1>Grid Gap</h1>
+        <h1>Grid Area</h1>
         <nav>
-            <div class="nav">
-                <p>Nav</p>
+            <div class="item01">
+                <p>item01</p>
             </div>
 
-            <div class="vnav">
-                <p>Vnav</p>
+            <div class="item02">
+                <p>item02</p>
             </div>
 
-            <div class="cont">
-                <p>Cont</p>
+            <div class="item03">
+                <p>item03</p>
             </div>
 
-            <div class="ads">
-                <p>Ads</p>
+            <div class="item04">
+                <p>item04</p>
             </div>
 
-            <div class="ext">
-                <p>Ext</p>
+            <div class="item05">
+                <p>item05</p>
             </div>
             
-            <div class="foot">
-                <p>Foot</p>
+            <div class="item06">
+                <p>item06</p>
             </div>
+
+            <div class="item07">
+                <p>item07</p>
+            </div>
+
+            <div class="item08">
+                <p>item08</p>
+            </div>
+
+            <div class="item09">
+                <p>item09</p>
+            </div>
+            
         </nav>
     </main>
 </body>
