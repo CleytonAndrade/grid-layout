@@ -17,14 +17,11 @@
         nav {
             gap: 5px;
             display: grid;
-            grid-template: repeat(2,100px)/ repeat(3,100px);           
+            grid-template: repeat(3,100px)/ repeat(2,100px);           
         }
 
         .nav {
-            grid-column-start: 3;
-            grid-column-end: 3;
-            /* grid-column: 3; 
-            Mandou o item nav para linha de coluna 3 que nao se expandiu mantendo na célula */
+            grid-row: 2 / -1;  /* Mandou o item para row line start 2 e expandiu até o limite */
         }
 
          nav > div {
