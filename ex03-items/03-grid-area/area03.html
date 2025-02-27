@@ -17,15 +17,11 @@
         nav {
             gap: 5px;
             display: grid;
-            grid: repeat(3,150px)/repeat(3,150px);         
+            grid:[linha1]150px[linha2]150px[linha3]150px[linha4] / [coluna1]150px[coluna2]150px[coluna3]150px[coluna4];  /*Dá pra colocar nomes em cada linha tbm*/       
         }
         .item01 {
-            /* 
-            grid-row-start: 2;
-            grid-column-start: 2;
-            grid-row-end: 4;
-            grid-column-end:4; */
-            grid-area: 2/2/4/4; /* É um shorthand para grid-row-start / grid-column-start / grid-row-end / grid-column-end */
+            /* grid-area: 2/2/4/4; */
+            grid-area: linha2 / coluna2 / linha4/coluna4 ; /*  */
         }
 
          nav > div {

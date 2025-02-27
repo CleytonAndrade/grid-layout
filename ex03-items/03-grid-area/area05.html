@@ -17,15 +17,15 @@
         nav {
             gap: 5px;
             display: grid;
-            grid: repeat(3,150px)/repeat(3,150px);         
+            grid: 
+                " area1 area2 area3 " 150px
+                " area4 area5 area6 " 150px
+                " area7 area8 area9 " 150px
+                / 150px 150px 150px
+            ;         
         }
         .item01 {
-            /* 
-            grid-row-start: 2;
-            grid-column-start: 2;
-            grid-row-end: 4;
-            grid-column-end:4; */
-            grid-area: 2/2/4/4; /* É um shorthand para grid-row-start / grid-column-start / grid-row-end / grid-column-end */
+            grid-area: area4 / area5 / area7 / area9 ; /* Mudou o item para o row start da area 4 ao mesmo tempo que para o column start da area 5 e o mandou expandir ate o row end da area 7 e ate o column end da area 9*/
         }
 
          nav > div {
