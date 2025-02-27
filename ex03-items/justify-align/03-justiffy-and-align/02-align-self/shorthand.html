@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: gray;
+        }
+        
+        nav {
+            gap: 5px;
+            display: grid;
+            grid: 
+                " area1 area2 area3 " 150px
+                " area4 area5 area6 " 150px
+                " area7 area8 area9 " 150px
+                / 150px 150px 150px
+            ;         
+        }
+        .item01 {
+            /* align-self: self-start; */
+            /* justify-self: center; */           
+            place-self: center;
+        }
+
+         nav > div {
+            background-color: brown;
+            border: 2px dashed white;
+         }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Grid Area</h1>
+        <nav>
+            <div class="item01">
+                <p>item01</p>
+            </div>
+
+            <div class="item02">
+                <p>item02</p>
+            </div>
+
+            <div class="item03">
+                <p>item03</p>
+            </div>
+
+            <div class="item04">
+                <p>item04</p>
+            </div>
+
+            <div class="item05">
+                <p>item05</p>
+            </div>
+            
+            <div class="item06">
+                <p>item06</p>
+            </div>
+
+            <div class="item07">
+                <p>item07</p>
+            </div>
+
+            <div class="item08">
+                <p>item08</p>
+            </div>
+
+            <div class="item09">
+                <p>item09</p>
+            </div>
+            
+        </nav>
+    </main>
+</body>
+</html>
